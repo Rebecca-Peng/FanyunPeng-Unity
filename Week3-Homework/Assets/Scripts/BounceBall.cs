@@ -15,9 +15,15 @@ public class BounceBall : MonoBehaviour {
 	private bool collide;
 	private bool NewBall;
 
+	//sound effect
+//	public AudioSource[] soundEffect;
+
 	//materials
 	public Material[] materials;
 	Renderer rend;
+
+	//newShpere color
+	Color[] SphereColor = {Color.red,new Color(1.0f,0.5f,0),Color.yellow,Color.green,Color.blue,Color.black,new Color(1.0f,0,1.0f)};
 
 	void Start () {
 		velocity = new Vector3 (Random.Range (-.1f, .1f), 0f, Random.Range (-.1f, .1f));
@@ -96,6 +102,7 @@ public class BounceBall : MonoBehaviour {
 			newball = GameObject.CreatePrimitive (PrimitiveType.Sphere);
 			newball.transform.position = this.transform.position;
 			newball.transform.localScale = this.transform.localScale / 2f;
+			newball.GetComponent<Renderer> ().material.color = SphereColor[count]; 
 			collide = false;
 			NewBall = true;
 		}
