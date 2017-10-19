@@ -42,7 +42,7 @@ public class OrbitMotion : MonoBehaviour {
 				orbitPath.yAxis = spectrum [i] +10;
 			} else {
 				orbitPath.xAxis = spectrum [i] * 5000 + 10;
-				orbitPath.yAxis = spectrum [i] * 5000 + 10fluorescence;
+				orbitPath.yAxis = spectrum [i] * 5000 + 10;
 			}
 			Debug.Log (orbitPath.xAxis);
 		}
