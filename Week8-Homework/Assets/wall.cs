@@ -34,9 +34,8 @@ public class wall : MonoBehaviour {
 		} else {
 			z += 0.1f;
 		}
-//
+
 		Debug.Log (collide);
-//		Debug.Log (count);
 		
 	}
 
@@ -44,6 +43,5 @@ public class wall : MonoBehaviour {
 //		Debug.Log ("call");
 		collide = true;
 		count++;
-//		Debug.Log (count);
 	} 
 }
