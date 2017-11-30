@@ -18,6 +18,8 @@ public class BoidController : MonoBehaviour {
 	public float spacingStrength = 0.1f;
 	public float facingStrength = 1f;
 
+
+
 	[Space]
 	public bool drawDebug = false;
 
